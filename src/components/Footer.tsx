@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center">
-              <div className="bg-gradient-hero p-2 rounded-lg shadow-button">
+              <div className="bg-primary-light p-2 rounded-lg shadow-button">
                 <MessageCircle className="h-6 w-6 text-white" />
               </div>
               <span className="ml-3 text-xl font-bold">Smart Match AI</span>

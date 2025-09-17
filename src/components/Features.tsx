@@ -54,7 +54,7 @@ const Features = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
             Why Choose{" "}
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="text-primary">
               Smart Match AI?
             </span>
           </h2>
@@ -95,7 +95,7 @@ const Features = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-20 bg-gradient-card rounded-2xl p-8 lg:p-12 border border-primary/10">
+        <div className="mt-20 bg-muted/50 rounded-2xl p-8 lg:p-12 border border-primary/10">
           <h3 className="text-2xl font-bold text-center mb-12">Trusted by Students Across India</h3>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">

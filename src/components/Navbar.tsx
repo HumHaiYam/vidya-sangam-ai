@@ -20,12 +20,12 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="flex-shrink-0 flex items-center">
-              <div className="bg-gradient-hero p-2 rounded-lg shadow-button">
-                <MessageCircle className="h-8 w-8 text-white" />
-              </div>
-              <span className="ml-3 text-xl font-bold text-primary-foreground">
-                Smart Match AI
+          <div className="flex-shrink-0 flex items-center">
+            <div className="bg-primary-light p-2 rounded-lg shadow-button">
+              <MessageCircle className="h-8 w-8 text-white" />
+            </div>
+            <span className="ml-3 text-xl font-bold text-primary-foreground">
+              Smart Match AI
               </span>
             </div>
           </div>

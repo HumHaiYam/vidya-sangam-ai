@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    /* Core Navy Blue Theme */
+    /* Core Dark Navy Blue Theme */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -16,11 +16,11 @@
     --popover: 220 100% 99%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Navy Blue Primary - Main brand color */
-    --primary: 217 91% 25%;
+    /* Dark Navy Blue Primary - Main brand color */
+    --primary: 217 91% 15%;
     --primary-foreground: 0 0% 98%;
-    --primary-light: 217 91% 35%;
-    --primary-dark: 217 91% 15%;
+    --primary-light: 217 91% 20%;
+    --primary-dark: 217 91% 10%;
 
     /* Indian Saffron Accent */
     --accent: 25 95% 53%;
@@ -44,15 +44,10 @@
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 217 91% 25%;
+    --ring: 217 91% 15%;
 
     /* Design System Tokens */
     --radius: 0.75rem;
-    
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 50%, hsl(var(--accent)) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
     
     /* Shadows */
     --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);

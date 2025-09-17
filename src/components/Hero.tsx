@@ -4,7 +4,7 @@ import { Search, Sparkles, TrendingUp, Users } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-hero min-h-[90vh] flex items-center relative overflow-hidden">
+    <section className="bg-primary min-h-[90vh] flex items-center relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-32 h-32 bg-accent rounded-full blur-xl"></div>
@@ -18,7 +18,7 @@ const Hero = () => {
           <div className="text-center lg:text-left animate-fade-in">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Find Your Perfect{" "}
-              <span className="bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent">
+              <span className="text-accent">
                 Internship
               </span>{" "}
               in India

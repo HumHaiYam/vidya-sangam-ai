@@ -42,13 +42,13 @@ const AIShowcase = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-4">
-            <div className="bg-gradient-primary p-3 rounded-xl shadow-button">
+            <div className="bg-primary p-3 rounded-xl shadow-button">
               <Sparkles className="h-8 w-8 text-white" />
             </div>
           </div>
           <h2 className="text-4xl font-bold mb-4">
             Experience Our{" "}
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="text-primary">
               AI Assistant
             </span>
           </h2>
@@ -61,7 +61,7 @@ const AIShowcase = () => {
           {/* AI Chat Demo */}
           <div className="order-2 lg:order-1">
             <Card className="shadow-elegant border-primary/10">
-              <CardHeader className="bg-gradient-primary text-white rounded-t-lg">
+              <CardHeader className="bg-primary text-white rounded-t-lg">
                 <CardTitle className="flex items-center">
                   <Bot className="h-6 w-6 mr-3" />
                   Smart Match AI Assistant
