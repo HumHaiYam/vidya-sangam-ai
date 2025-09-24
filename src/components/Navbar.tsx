@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Search, Menu, MessageCircle, Globe } from "lucide-react";
+import { Search, Menu, MessageCircle, Globe, Target, Bell, User } from "lucide-react";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -20,13 +20,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-          <div className="flex-shrink-0 flex items-center">
-            <div className="bg-primary-light p-2 rounded-lg shadow-button">
-              <MessageCircle className="h-8 w-8 text-white" />
-            </div>
-            <span className="ml-3 text-xl font-bold text-primary-foreground">
+          <div className="flex-shrink-0 flex items-center gap-2">
+            <Target className="h-8 w-8 text-accent" />
+            <span className="text-xl font-bold text-primary-foreground">
               Smart Match AI
-              </span>
+            </span>
             </div>
           </div>
 
@@ -49,10 +47,21 @@ const Navbar = () => {
           </div>
 
           {/* Right side items */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-2">
+            {/* Search */}
+            <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-accent">
+              <Search className="h-5 w-5" />
+            </Button>
+            
+            {/* Notifications */}
+            <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-accent relative">
+              <Bell className="h-5 w-5" />
+              <span className="absolute -top-1 -right-1 h-3 w-3 bg-accent rounded-full"></span>
+            </Button>
+            
             {/* Language Selector */}
             <Select defaultValue="en">
-              <SelectTrigger className="w-32 bg-primary-light border-primary-light text-primary-foreground hover:bg-primary-dark">
+              <SelectTrigger className="w-32 bg-transparent border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10">
                 <Globe className="h-4 w-4 mr-2" />
                 <SelectValue />
               </SelectTrigger>
@@ -65,7 +74,8 @@ const Navbar = () => {
               </SelectContent>
             </Select>
 
-            <Button variant="ghost" size="sm" className="text-primary-foreground hover:bg-primary-light">
+            <Button variant="ghost" size="sm" className="text-primary-foreground hover:text-accent flex items-center gap-2">
+              <User className="h-4 w-4" />
               Sign In
             </Button>
             <Button variant="accent" size="sm" className="shadow-button">

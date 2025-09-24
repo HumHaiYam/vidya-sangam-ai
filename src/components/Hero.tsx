@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Search, Sparkles, TrendingUp, Users } from "lucide-react";
+import { Search, Sparkles, TrendingUp, Users, Target, Briefcase, Star, ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -16,6 +16,10 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
           <div className="text-center lg:text-left animate-fade-in">
+            <div className="flex items-center justify-center lg:justify-start gap-2 mb-4">
+              <Target className="h-8 w-8 text-accent" />
+              <span className="text-xl font-semibold text-accent">Smart Match AI</span>
+            </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Find Your Perfect{" "}
               <span className="text-accent">
@@ -50,8 +54,9 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="lg" className="shadow-button hover:scale-105 transition-all duration-300">
+              <Button variant="hero" size="lg" className="shadow-button hover:scale-105 transition-all duration-300 flex items-center gap-2">
                 Start Your Journey
+                <ArrowRight className="h-5 w-5" />
               </Button>
               <Button variant="ghost" size="lg" className="text-white border-white/30 hover:bg-white/10">
                 Learn More
@@ -60,15 +65,18 @@ const Hero = () => {
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-white/20">
-              <div className="text-center">
+              <div className="text-center flex flex-col items-center">
+                <Briefcase className="h-6 w-6 text-accent mb-2" />
                 <div className="text-2xl font-bold text-white mb-1">10K+</div>
                 <div className="text-white/70 text-sm">Active Internships</div>
               </div>
-              <div className="text-center">
+              <div className="text-center flex flex-col items-center">
+                <Users className="h-6 w-6 text-accent mb-2" />
                 <div className="text-2xl font-bold text-white mb-1">500+</div>
                 <div className="text-white/70 text-sm">Partner Companies</div>
               </div>
-              <div className="text-center">
+              <div className="text-center flex flex-col items-center">
+                <Star className="h-6 w-6 text-accent mb-2" />
                 <div className="text-2xl font-bold text-white mb-1">50K+</div>
                 <div className="text-white/70 text-sm">Students Placed</div>
               </div>
