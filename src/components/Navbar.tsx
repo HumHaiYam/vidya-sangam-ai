@@ -33,7 +33,7 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
-              <a href="#" className="text-primary-foreground hover:text-accent-light transition-all duration-300 font-medium">
+              <a href="/internships" className="text-primary-foreground hover:text-accent-light transition-all duration-300 font-medium">
                 Find Internships
               </a>
               <a href="#" className="text-primary-foreground hover:text-accent-light transition-all duration-300 font-medium">
@@ -87,7 +87,7 @@ const Navbar = () => {
         {/* Mobile menu */}
         {isMenuOpen && (
           <div className="md:hidden bg-primary-light rounded-lg mt-2 p-4 space-y-3">
-            <a href="#" className="block text-primary-foreground hover:text-accent-light py-2">
+            <a href="/internships" className="block text-primary-foreground hover:text-accent-light py-2">
               Find Internships
             </a>
             <a href="#" className="block text-primary-foreground hover:text-accent-light py-2">
